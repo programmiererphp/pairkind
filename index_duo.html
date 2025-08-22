@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Duo Micro‑Volunteering — Einfach helfen, echt verbinden</title>
+  <meta name="description" content="Vorab‑Projekt: Menschen werden zu Zweier‑Teams für 2–5‑stündige Mikro‑Einsätze gepaart. So gewinnen NGOs neue Freiwillige ohne lange Bindung – und Teilnehmende knüpfen Freundschaften oder finden Romantik durch gemeinsames Tun." />
+  <link rel="canonical" href="https://example.github.io/" />
+  <meta property="og:title" content="Duo Micro‑Volunteering" />
+  <meta property="og:description" content="Zweier‑Teams mit Sinn. Onboarding ins Ehrenamt. Wärme statt Einsamkeit. (Pre‑Launch: Partner & Förderer gesucht)" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .section { scroll-margin-top: 96px; }
+    .blob { filter: blur(60px); opacity: .35; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-rose-50 via-amber-50 to-sky-50 text-gray-900">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 font-semibold">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white">DV</span>
+        <span class="tracking-tight">Duo Micro‑Volunteering</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#how" class="hover:text-emerald-700">So funktioniert’s</a>
+        <a href="#ngos" class="hover:text-emerald-700">Für NGOs</a>
+        <a href="#impact" class="hover:text-emerald-700">Wirkung</a>
+        <a href="#budget" class="hover:text-emerald-700">Budget</a>
+        <a href="#motivation" class="hover:text-emerald-700">Begründung</a>
+        <a href="#safety" class="hover:text-emerald-700">Sicherheit</a>
+        <a href="#sponsor" class="hover:text-emerald-700">Fördern</a>
+        <a href="#contact" class="hover:text-emerald-700">Kontakt</a>
+        <div class="flex items-center gap-2 pl-3 border-l">
+          <button id="btnDE" class="text-emerald-700 font-semibold">DE</button>
+          <span class="text-gray-400">|</span>
+          <button id="btnEN" class="hover:text-emerald-700">EN</button>
+        </div>
+      </nav>
+      <!-- Mobile burger -->
+      <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="sr-only">Menü</span>
+        <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white/95 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 grid gap-3 text-sm">
+        <div class="flex items-center gap-3">
+          <button id="mBtnDE" class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700">DE</button>
+          <button id="mBtnEN" class="px-3 py-1 rounded-lg bg-gray-100">EN</button>
+        </div>
+        <a href="#how" class="py-2">So funktioniert’s</a>
+        <a href="#ngos" class="py-2">Für NGOs</a>
+        <a href="#impact" class="py-2">Wirkung</a>
+        <a href="#budget" class="py-2">Budget</a>
+        <a href="#motivation" class="py-2">Begründung</a>
+        <a href="#safety" class="py-2">Sicherheit</a>
+        <a href="#sponsor" class="py-2">Fördern</a>
+        <a href="#contact" class="py-2">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="section relative overflow-hidden">
+    <div class="absolute -top-10 -left-10 w-64 h-64 bg-rose-300 rounded-full blob"></div>
+    <div class="absolute top-20 -right-16 w-72 h-72 bg-emerald-300 rounded-full blob"></div>
+    <div class="absolute bottom-0 left-1/3 w-80 h-80 bg-sky-300 rounded-full blob"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-200">Vorab‑Phase · NGO‑Partner & Förderer gesucht</div>
+        <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+          Einfaches Ehrenamt, das <span class="text-emerald-700">echte Nähe</span> schafft
+        </h1>
+        <p class="mt-4 text-lg text-gray-700">Wir bauen ein Portal, das Menschen für <strong>2–5‑stündige Mikro‑Einsätze</strong> zu <strong>Zweier‑Teams</strong> matched. So gewinnen Organisationen neue Freiwillige <strong>ohne lange Bindung</strong> – und Teilnehmende erleben sinnvolle Begegnungen, aus denen <strong>Freundschaften oder Romantik</strong> entstehen können.</p>
+        <p class="mt-3 text-sm text-gray-600">Status: Konzept/Design · Pilotstadt: <strong>Göttingen</strong> → Skalierung nach Validierung.</p>
+      </div>
+      <div class="relative">
+        <svg viewBox="0 0 640 420" class="w-full h-auto drop-shadow-xl rounded-2xl bg-white">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#10B981"/>
+              <stop offset="100%" stop-color="#0EA5E9"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="640" height="420" fill="#ffffff"/>
+          <circle cx="200" cy="130" r="36" fill="url(#g1)" opacity="0.9"/>
+          <circle cx="440" cy="130" r="36" fill="url(#g1)" opacity="0.9"/>
+          <path d="M210 200 C 260 240, 320 240, 320 310 C 320 240, 380 240, 430 200" fill="none" stroke="#10B981" stroke-width="10" stroke-linecap="round"/>
+          <rect x="160" y="260" rx="16" ry="16" width="320" height="120" fill="#F0FDF4" stroke="#D1FAE5"/>
+          <text x="180" y="300" font-family="ui-sans-serif,system-ui" font-size="20" fill="#065F46">Mikro‑Einsatz: Gemeinschaftsgarten</text>
+          <text x="180" y="330" font-family="ui-sans-serif,system-ui" font-size="16" fill="#047857">2–5 Std • Konzept‑Vorschau</text>
+          <g>
+            <rect x="430" y="40" rx="12" ry="12" width="210" height="46" fill="#ECFDF5" stroke="#A7F3D0"/>
+            <text x="442" y="70" font-family="ui-sans-serif,system-ui" font-size="16" fill="#065F46">Essensgutschein: Partner‑Deal</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section id="value" class="section py-12 bg-white/80 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Was dieses Portal leistet</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold text-lg">Ehrenamt vereinfachen</h3>
+          <p class="mt-2 text-gray-700">Zweier‑Teams und 2–5‑Stunden‑Einsätze sind niedrigschwellig: Man probiert aus, statt sich sofort zu binden. NGOs gewinnen neue Menschen.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold text-lg">Freundschaft & Dating – aber sinnvoll</h3>
+          <p class="mt-2 text-gray-700">Keine Endlos‑Swipes, keine belanglosen Restaurant‑Dates: Gemeinsames Tun schafft echte Gesprächsanlässe und geteilte Erlebnisse.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white">
+          <h3 class="font-semibold text-lg">Gesellschaft zusammenbringen</h3>
+          <p class="mt-2 text-gray-700">Begegnungen über Milieus hinweg bauen Vorurteile ab und wirken rechten Tendenzen entgegen. Gemeinsam anpacken vereint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">So wird der Pilot funktionieren</h2>
+      <div class="mt-6 grid md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl border bg-white"><div class="text-sm uppercase tracking-wide text-gray-500">Schritt 1</div><h3 class="font-semibold mt-1">Anmelden</h3><p class="mt-2 text-gray-700">Mobiler Login, Kurzprofil (Zeiten, Ort, Interessen, Sprachen). Telefon/ID verifiziert.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><div class="text-sm uppercase tracking-wide text-gray-500">Schritt 2</div><h3 class="font-semibold mt-1">Gepaart werden</h3><p class="mt-2 text-gray-700">Matching nach Zeit, Nähe, Aufgabentyp und Präferenzen – für ein Zweier‑Team.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><div class="text-sm uppercase tracking-wide text-gray-500">Schritt 3</div><h3 class="font-semibold mt-1">Mikro‑Einsatz (2–5 Std)</h3><p class="mt-2 text-gray-700">Gemeinschaftsgarten, Einkaufshilfe, Müllsammeln, Bibliothek u.v.m. Aufgaben kommen von NGOs/Ämtern.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><div class="text-sm uppercase tracking-wide text-gray-500">Schritt 4</div><h3 class="font-semibold mt-1">Gemeinsam essen (optional)</h3><p class="mt-2 text-gray-700">QR‑Gutschein (partner‑mitfinanziert, zeitlich begrenzt) fördert ein warmes Nach‑Gespräch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR NGOS -->
+  <section id="ngos" class="section py-14 bg-white/80 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Für NGOs & Stadt: Menschen gewinnen ohne lange Bindung</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Mikro‑Task‑Trichter</h3><p class="mt-2 text-gray-700">2–5‑Std‑Aufgaben mit klarem Start/Ende veröffentlichen. Wir übernehmen Duo‑Matching, Erinnerungen, Anwesenheit.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Überführung in Regelrollen</h3><p class="mt-2 text-gray-700">Nach wenigen Einsätzen laden Sie passende Duos zu längeren Schichten/Projekten ein.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Dashboard & Daten</h3><p class="mt-2 text-gray-700">No‑Shows, Stunden, Wiederkehrer. Export mit Einwilligung. DSGVO‑konform.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" class="section py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Pilotziele & erwartete Wirkung</h2>
+      <p class="mt-3 text-gray-700">Pilot in Göttingen, 6 Monate. Ziele: <strong>2.000 Teilnehmende</strong>, <strong>1.000 Duo‑Einsätze</strong>, <strong>200 stabile Kontakte</strong> (≥3 Treffen). Wir messen u. a. Wieder‑Matching, gefühlte Verbundenheit und Überführung in Regelrollen.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white text-center"><div class="text-4xl font-semibold text-emerald-700">1.000</div><div class="mt-1 text-gray-600">Duo‑Einsätze</div></div>
+        <div class="p-6 rounded-2xl border bg-white text-center"><div class="text-4xl font-semibold text-emerald-700">200</div><div class="mt-1 text-gray-600">stabile Verbindungen</div></div>
+        <div class="p-6 rounded-2xl border bg-white text-center"><div class="text-4xl font-semibold text-emerald-700">60%+</div><div class="mt-1 text-gray-600">positive Rückmeldungen zur Verbundenheit</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUDGET (collapsible) -->
+  <section id="budget" class="section py-14 bg-white/80 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Budget</h2>
+      <p class="mt-3 text-gray-700">Für die meisten Besucher genügt die Kurzinfo. <strong>Fördernde</strong> finden Details unten.</p>
+      <details class="mt-4 p-0" id="budgetDetails">
+        <summary class="cursor-pointer select-none px-4 py-3 rounded-xl bg-gray-100 border border-gray-200 font-medium">Budgetdetails für Fördernde anzeigen</summary>
+        <div class="mt-4 overflow-x-auto">
+          <table class="min-w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+            <thead class="bg-gray-100"><tr><th class="text-left px-4 py-3">Position</th><th class="text-right px-4 py-3">Kosten (EUR)</th></tr></thead>
+            <tbody class="divide-y divide-gray-200 bg-white">
+              <tr><td class="px-4 py-3">Plattform (OSS + No‑Code, Hosting)</td><td class="px-4 py-3 text-right">7.500</td></tr>
+              <tr><td class="px-4 py-3">Ops & Community (0,5 VZÄ)</td><td class="px-4 py-3 text-right">18.000</td></tr>
+              <tr><td class="px-4 py-3">NGO‑Partnerschaften & Outreach</td><td class="px-4 py-3 text-right">3.000</td></tr>
+              <tr><td class="px-4 py-3">Gutschein‑Zuschuss (Ø 6 € × 1.000 Duos)</td><td class="px-4 py-3 text-right">6.000</td></tr>
+              <tr><td class="px-4 py-3">Material/Versicherung/Recht</td><td class="px-4 py-3 text-right">2.500</td></tr>
+              <tr class="font-semibold bg-emerald-50"><td class="px-4 py-3">Monitoring & Evaluation</td><td class="px-4 py-3 text-right">2.500</td></tr>
+              <tr class="font-semibold"><td class="px-4 py-3">Summe (6 Monate)</td><td class="px-4 py-3 text-right">39.500</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-2 text-xs text-gray-500">Table ID: <code>tbl-budget-01</code></p>
+          <div class="mt-6 overflow-x-auto">
+            <table class="min-w-full text-sm border border-gray-200 rounded-xl overflow-hidden">
+              <thead class="bg-gray-100"><tr><th class="text-left px-4 py-3">Rate stabile Beziehungen</th><th class="text-right px-4 py-3">Kosten pro stabile Beziehung</th></tr></thead>
+              <tbody class="divide-y divide-gray-200 bg-white">
+                <tr><td class="px-4 py-3">15% (150 Stück)</td><td class="px-4 py-3 text-right">263 €</td></tr>
+                <tr class="font-semibold"><td class="px-4 py-3">20% (200 Stück)</td><td class="px-4 py-3 text-right">198 €</td></tr>
+                <tr><td class="px-4 py-3">25% (250 Stück)</td><td class="px-4 py-3 text-right">158 €</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-xs text-gray-500">Table ID: <code>tbl-sensitivity-01</code></p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- MOTIVATION / BEGRÜNDUNG -->
+  <section id="motivation" class="section py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Begründung & Motivation</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Einsamkeit verringern</h3><p class="mt-2 text-gray-700">Viele wünschen sich Kontakte, scheuen aber feste Verpflichtungen. Niedrigschwellige Duo‑Einsätze schaffen Wärme, Sinn und wiederholte Begegnungen.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Gesellschaft zusammenführen</h3><p class="mt-2 text-gray-700">Durch echte Begegnungen über Milieus hinweg wirken wir <strong>Polarisation und rechten Tendenzen</strong> entgegen. Gemeinsames Anpacken baut Vorurteile ab und stärkt eine demokratische, solidarische Kultur.</p></div>
+      </div>
+      <ul class="mt-6 space-y-2 text-gray-700 list-disc list-inside">
+        <li><strong>Freiwilligenarbeit</strong> stärken: planbare 2–5‑Std‑Einsätze als Einstieg.</li>
+        <li><strong>Freundschaft & Romantik</strong>: echte Erlebnisse statt Swipes und Smalltalk‑Dates.</li>
+        <li><strong>Stadtgesellschaft</strong> vernetzen: Brücken zwischen Alters‑, Herkunfts‑ und Bildungsgruppen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SICHERHEIT / PRIVACY -->
+  <section id="safety" class="section py-14 bg-white/80 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Sicherheit, Datenschutz & Integrität</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Sicherheit</h3><ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside"><li>ID/Telefon‑Verifizierung; optional Referenzen/Background‑Check.</li><li>Öffentliche Aufgaben, Check‑ins, Notfall‑Button, Vorfall‑Prozess.</li><li>Geprüfte Partner; Anti‑Missbrauch bei Gutscheinen.</li></ul></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Datenschutz (DSGVO)</h3><ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside"><li>Minimale Datenerhebung, klare Aufbewahrungsfristen.</li><li>AV‑Verträge; Transport/at‑rest verschlüsselt.</li><li>Selbstbestimmung: Konto/Daten löschen; Einwilligung zu Forschung.</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORSHIP (no CTA buttons) -->
+  <section id="sponsor" class="section py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Den Göttingen‑Pilot fördern</h2>
+      <p class="mt-3 text-gray-700">Gesucht: <strong>Leadschenkung 12.000 €</strong> (Partner abschließen & MVP fertigstellen) und <strong>39.500 €</strong> für den schlanken 6‑Monats‑Pilot. Fördernde erhalten ein Live‑Dashboard und Quartals‑Memos. Kontakt unten per E‑Mail oder WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- JOIN (no CTA buttons) -->
+  <section id="join" class="section py-14 bg-gradient-to-b from-white to-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Beim Pilot mitmachen</h2>
+      <p class="mt-3 text-gray-700">Wir onboarden Studierende und junge Berufstätige in Göttingen. Restaurants und NGOs willkommen! Formulare folgen – bis dahin bitte unten per E‑Mail/WhatsApp melden.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Teilnehmende</h3><p class="mt-2 text-gray-700">Zweier‑Teams, 2–5‑Std‑Einsätze, optional gemeinsames Essen – für echte Begegnungen.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">Restaurant‑Partner</h3><p class="mt-2 text-gray-700">Off‑Peak füllen & Gemeinschaft fördern. Gutscheine werden mitfinanziert; Anti‑Missbrauch inklusive.</p></div>
+        <div class="p-6 rounded-2xl border bg-white"><h3 class="font-semibold">NGOs & Ämter</h3><p class="mt-2 text-gray-700">Mikro‑Tasks listen, verlässliche Duos bekommen, Anwesenheit tracken, in Regelrollen einladen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section py-14 bg-white/80 border-y border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-semibold">FAQ</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="p-6 rounded-2xl border bg-white"><summary class="font-semibold cursor-pointer">Ist das eine Dating‑App?</summary><p class="mt-2 text-gray-700">Nein. Es ist eine Ehrenamts‑Plattform für Zweier‑Begegnungen. Freundschaft oder Dating können entstehen – durch <em>gemeinsames Tun</em>, nicht durch Swipen.</p></details>
+        <details class="p-6 rounded-2xl border bg-white"><summary class="font-semibold cursor-pointer">Können NGOs darüber Freiwillige gewinnen?</summary><p class="mt-2 text-gray-700">Ja. Das Modell senkt die Einstiegshürde und führt Menschen nach und nach in Regelrollen.</p></details>
+        <details class="p-6 rounded-2xl border bg-white"><summary class="font-semibold cursor-pointer">Was umfasst der Gutschein?</summary><p class="mt-2 text-gray-700">Ein einfaches Essen/Getränk. Ziel ist ein niedriger Zuschuss (Ø ~6 € pro Duo) durch Mitfinanzierung der Partner.</p></details>
+        <details class="p-6 rounded-2xl border bg-white"><summary class="font-semibold cursor-pointer">Wie messt ihr Wirkung?</summary><p class="mt-2 text-gray-700">Kurze Befragungen zu Verbundenheit und Wohlbefinden, Wieder‑Matching‑Rate, Teilnahmequote und Überführung in Regelrollen.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (only WhatsApp & Email buttons) -->
+  <section id="contact" class="section py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Kontakt (Anti‑Scrape‑Reveal)</h2>
+      <p class="mt-3 text-gray-700">Projekt in Planung. Für Förderungen, Partnerschaften oder Presse bitte eine Kontaktmethode einblenden.</p>
+
+      <!-- EMAIL REVEAL -->
+      <div class="mt-6">
+        <button id="revealEmailBtn" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">E‑Mail anzeigen</button>
+        <a id="emailLink" href="#" class="hidden ml-3 align-middle px-4 py-3 rounded-xl border border-gray-300 bg-white hover:border-emerald-600">Mail‑App öffnen</a>
+        <button id="copyEmailBtn" class="hidden ml-2 px-3 py-3 rounded-xl border border-gray-300 bg-white hover:border-emerald-600">Kopieren</button>
+        <span id="emailStatus" class="ml-2 text-sm text-gray-600"></span>
+      </div>
+
+      <!-- WHATSAPP REVEAL -->
+      <div id="waBlock" class="mt-6">
+        <button id="revealWABtn" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700">WhatsApp anzeigen</button>
+        <a id="waLink" href="#" target="_blank" rel="noopener" class="hidden ml-3 align-middle px-4 py-3 rounded-xl border border-gray-300 bg-white hover:border-emerald-600">In WhatsApp schreiben</a>
+        <button id="copyWABtn" class="hidden ml-2 px-3 py-3 rounded-xl border border-gray-300 bg-white hover:border-emerald-600">Kopieren</button>
+        <span id="waStatus" class="ml-2 text-sm text-gray-600"></span>
+      </div>
+
+      <!-- Language widget (unsichtbar) -->
+      <div id="google_translate_element" class="hidden"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 items-center">
+      <div>
+        <div class="flex items-center gap-2 font-semibold"><span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-500 text-white">DV</span><span>Duo Micro‑Volunteering</span></div>
+        <p class="mt-3 text-sm text-gray-400">© <span id="y"></span> Duo Micro‑Volunteering. Mit Herz in Göttingen gebaut.</p>
+      </div>
+      <div class="text-sm"><p><strong>Daten & Ethik:</strong> DSGVO‑konform, transparente Evaluation, offenes Playbook.</p></div>
+      <div class="text-sm"><a href="#privacy" class="hover:underline">Datenschutz</a> · <a href="#imprint" class="hover:underline">Impressum</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Jahr im Footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // === Mobile menu toggle ===
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn?.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+    });
+    // Close menu on link click (improves UX)
+    mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileBtn?.setAttribute('aria-expanded', 'false');
+    }));
+    // Hide panel if resizing to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) { mobileMenu?.classList.add('hidden'); mobileBtn?.setAttribute('aria-expanded','false'); }
+    });
+
+    // === Einfache XOR‑Verschleierung (nur gegen triviale Scraper) ===
+    const EMAIL_KEY = 73; // E‑Mail "programmierphp@gmail.com"
+    const EMAIL_CIPH = [57,59,38,46,59,40,36,36,32,44,59,57,33,57,9,46,36,40,32,37,103,42,38,36];
+
+    // WhatsApp (E.164 ohne Plus): 4915154891724
+    const WA_ENABLED = true;
+    const WA_KEY = 91;
+    const WA_CIPH = [111,98,106,110,106,110,111,99,98,106,108,105,111];
+
+    function xorDecode(arr, key){ return arr.map(n => String.fromCharCode(n ^ key)).join(''); }
+
+    // E‑Mail anzeigen
+    const revealEmailBtn = document.getElementById('revealEmailBtn');
+    const emailLink = document.getElementById('emailLink');
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const emailStatus = document.getElementById('emailStatus');
+    revealEmailBtn.addEventListener('click', () => {
+      const email = xorDecode(EMAIL_CIPH, EMAIL_KEY);
+      emailLink.href = `mailto:${encodeURIComponent(email)}?subject=Duo%20Micro-Volunteering%20Pilot`;
+      emailLink.classList.remove('hidden');
+      copyEmailBtn.classList.remove('hidden');
+      emailStatus.textContent = email;
+    });
+    copyEmailBtn.addEventListener('click', async () => {
+      try { const email = xorDecode(EMAIL_CIPH, EMAIL_KEY); await navigator.clipboard.writeText(email); emailStatus.textContent = 'E‑Mail kopiert'; }
+      catch(e){ emailStatus.textContent = 'Kopieren fehlgeschlagen'; }
+    });
+
+    // WhatsApp anzeigen
+    const revealWABtn = document.getElementById('revealWABtn');
+    const waLink = document.getElementById('waLink');
+    const copyWABtn = document.getElementById('copyWABtn');
+    const waStatus = document.getElementById('waStatus');
+    revealWABtn.addEventListener('click', () => {
+      if (!WA_ENABLED || !WA_CIPH.length) { waStatus.textContent = 'WhatsApp ist noch nicht konfiguriert.'; return; }
+      const number = xorDecode(WA_CIPH, WA_KEY);
+      const msg = encodeURIComponent('Hallo! Ich interessiere mich für die Förderung des Göttingen‑Piloten.');
+      waLink.href = `https://wa.me/${number}?text=${msg}`;
+      waLink.classList.remove('hidden');
+      copyWABtn.classList.remove('hidden');
+      waStatus.textContent = `+${number}`;
+    });
+    copyWABtn.addEventListener('click', async () => {
+      try { const number = xorDecode(WA_CIPH, WA_KEY); await navigator.clipboard.writeText('+' + number); waStatus.textContent = 'WhatsApp‑Nummer kopiert'; }
+      catch(e){ waStatus.textContent = 'Kopieren fehlgeschlagen'; }
+    });
+
+    // === Google Translate Widget (DE ↔ EN) ===
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'de', includedLanguages: 'de,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+    }
+    function triggerTranslate(lang){
+      const trySelect = () => { const sel = document.querySelector('select.goog-te-combo'); if (sel) { sel.value = lang; sel.dispatchEvent(new Event('change')); return true; } return false; };
+      if (!trySelect()) { let tries = 0; const iv = setInterval(()=>{ if (trySelect() || ++tries>50) clearInterval(iv); }, 200); }
+    }
+    document.getElementById('btnDE')?.addEventListener('click', ()=> triggerTranslate('de'));
+    document.getElementById('btnEN')?.addEventListener('click', ()=> triggerTranslate('en'));
+    document.getElementById('mBtnDE')?.addEventListener('click', ()=> { triggerTranslate('de'); mobileMenu.classList.add('hidden'); mobileBtn?.setAttribute('aria-expanded','false'); });
+    document.getElementById('mBtnEN')?.addEventListener('click', ()=> { triggerTranslate('en'); mobileMenu.classList.add('hidden'); mobileBtn?.setAttribute('aria-expanded','false'); });
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
